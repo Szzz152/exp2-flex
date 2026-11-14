@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>个人中心 375</title>
+<style>
+html { width: 375px; }
+body { width: 375px; margin: 0; padding: 0;
+        font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+
+.page {
+  min-height: 100vh;
+  background: #f2f4f8;
+}
+
+/* 头部：column 方向（默认），align-items 交叉轴居中 */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40.00px 20.00px 28.00px;
+  background: linear-gradient(135deg, #1F3A8C 0%, #07A35A 100%);
+}
+
+.avatar {
+  width: 70.00px;
+  height: 70.00px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10.00px;
+}
+
+.avatar-text {
+  font-size: 30.00px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nickname {
+  font-size: 19.00px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 9.00px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.tag {
+  font-size: 11.00px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.22);
+  padding: 4.00px 12.00px;
+  border-radius: 12.00px;
+  margin: 0 4.00px;
+}
+
+/* 概览卡：向上偏移压住头部；三列 flex:1 等宽 */
+.stats {
+  display: flex;
+  flex-direction: row;
+  margin: -16.00px 12.00px 0;
+  background: #fff;
+  border-radius: 10.00px;
+  box-shadow: 0 4.00px 12.00px rgba(31, 58, 140, 0.10);
+}
+
+.stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14.00px 0;
+}
+
+.stat-num {
+  font-size: 18.00px;
+  font-weight: bold;
+  color: #1F3A8C;
+}
+
+.stat-label {
+  font-size: 12.00px;
+  color: #8a909c;
+  margin-top: 4.00px;
+}
+
+/* 菜单：每行 row，文字 flex:1 占满，箭头挤到最右 */
+.menu {
+  margin: 12.00px;
+  background: #fff;
+  border-radius: 10.00px;
+  padding: 0 14.00px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 17.00px 0;
+  border-bottom: 0.50px solid #eef0f4;
+}
+
+.menu-item.noBorder {
+  border-bottom: none;
+}
+
+.menu-dot {
+  width: 8.00px;
+  height: 8.00px;
+  border-radius: 50%;
+  background: #1F3A8C;
+  margin-right: 11.00px;
+}
+
+.menu-text {
+  flex: 1;
+  font-size: 15.00px;
+  color: #222a35;
+}
+
+.menu-arrow {
+  font-size: 18.00px;
+  color: #c0c4cc;
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="avatar"><span class="avatar-text">开</span></div>
+    <span class="nickname">开发者小王</span>
+    <div class="tags"><span class="tag">UniApp 达人</span><span class="tag">前端工程师</span></div>
+  </div>
+  <div class="stats"><div class="stat"><span class="stat-num">128h</span><span class="stat-label">学习时长</span></div><div class="stat"><span class="stat-num">7</span><span class="stat-label">完成实验</span></div><div class="stat"><span class="stat-num">12</span><span class="stat-label">获得勋章</span></div></div>
+  <div class="menu"><div class="menu-item"><span class="menu-dot"></span><span class="menu-text">我的课程</span><span class="menu-arrow">&#8250;</span></div><div class="menu-item"><span class="menu-dot"></span><span class="menu-text">学习进度</span><span class="menu-arrow">&#8250;</span></div><div class="menu-item"><span class="menu-dot"></span><span class="menu-text">成就勋章</span><span class="menu-arrow">&#8250;</span></div><div class="menu-item"><span class="menu-dot"></span><span class="menu-text">消息通知</span><span class="menu-arrow">&#8250;</span></div><div class="menu-item noBorder"><span class="menu-dot"></span><span class="menu-text">设置</span><span class="menu-arrow">&#8250;</span></div></div>
+</div>
+</body>
+</html>
